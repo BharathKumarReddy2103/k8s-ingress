@@ -68,3 +68,4 @@ spec:
             name: app2
             port:
               number: 80 # app2 service port
+              
