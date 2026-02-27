@@ -8,7 +8,7 @@ metadata:
     project: roboshop
     app: app2
 spec:
-  replicas: 2
+  replicas: 3
   # These are the labels replica set use to create pod replicas, this should match pod labels
   selector:
     matchLabels:
@@ -68,4 +68,3 @@ spec:
             name: app2
             port:
               number: 80 # app2 service port
-              
