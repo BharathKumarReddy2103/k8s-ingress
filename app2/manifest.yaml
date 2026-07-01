@@ -51,14 +51,14 @@ metadata:
   name: app2
   annotations:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:334864977755:certificate/da2ce415-86b4-423c-90c2-b58decc6ee2a
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:334864977755:certificate/c4875d87-1e56-437f-b414-493ed66eb4a1
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/group.name: bharath
 spec:
   ingressClassName: alb
   rules:
-  - host: "app2.nbkumar2103.site"
+  - host: "app2.bharath2103.online"
     http:
       paths:
       - pathType: Prefix
@@ -68,4 +68,3 @@ spec:
             name: app2
             port:
               number: 80 # app2 service port
-              
