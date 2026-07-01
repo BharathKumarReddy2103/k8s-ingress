@@ -54,7 +54,7 @@ metadata:
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:334864977755:certificate/c4875d87-1e56-437f-b414-493ed66eb4a1
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/group.name: bharath
+    # alb.ingress.kubernetes.io/group.name: bharath
 spec:
   ingressClassName: alb
   rules:
