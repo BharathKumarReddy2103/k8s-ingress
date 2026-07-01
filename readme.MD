@@ -20,6 +20,7 @@ curl -o iam-policy.json https://raw.githubusercontent.com/kubernetes-sigs/aws-lo
 ```
 
 ### Create IAM Policy
+
 ```
 aws iam create-policy \
     --policy-name AWSLoadBalancerControllerIAMPolicy \
@@ -27,6 +28,7 @@ aws iam create-policy \
 ```
 
 ### Create IAM Role and K8 ServiceAccount. 
+
 Mapping between IAM ROle and K8 Service account
 ```
 eksctl create iamserviceaccount \
@@ -37,6 +39,12 @@ eksctl create iamserviceaccount \
 --override-existing-serviceaccounts \
 --region $REGION_CODE \
 --approve
+```
+
+### Install Helm (On Amazon Linux 2 EC2)
+
+```
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 ```
 
 ### Install Load balancer controller drivers
